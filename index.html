@@ -2,17 +2,109 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssg</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<div class="grid">
-    <div class="grid__item"></div>
-    <div class="grid__item"></div>
-    <div class="grid__item"></div>
-    <div class="grid__item"></div>
-    <div class="grid__item"></div>
-    <div class="grid__item"></div>
+<div class="app">
+    <header class="site-header">
+       <div class="container">
+           <a href="" class="site-header__logo">
+               <img src="assets/img/logo.jpg" alt="">
+           </a>
+       </div>
+    </header>
+
+    <main class="site-main">
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">CSS filters</h2>
+                <div class="grid">
+
+                    <article class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz9.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz10.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz6.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz1.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz2.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz3.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz4.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz5.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                    <article  class="grid__item js-grid-item">
+                        <div class="grid__item-image">
+                            <img src="assets/img/lz8.jpg" alt="FrancescoLucania.com">
+                        </div>
+                        <h3 class="grid__item-info"></h3>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.js-grid-item').forEach((button)=> {
+            button.addEventListener('click', (event)=> {
+                event.preventDefault();
+
+                button.classList.toggle('is-active')
+            })
+
+        });
+    </script>
 </div>
 </body>
 </html>
