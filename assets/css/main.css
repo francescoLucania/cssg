@@ -1,0 +1,50 @@
+
+:root {
+    --main-bg-color: DarkSlateBlue	;
+    --grid-item-bg-color: black;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.grid {
+    counter-reset: item;
+}
+
+.grid__item {
+    padding: 8px;
+    background-color: var(--grid-item-bg-color);
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.grid__item:nth-child(1) {
+    --grid-item-bg-color: Magenta;
+}
+
+.grid__item:nth-child(2) {
+    --grid-item-bg-color: SlateBlue;
+}
+
+.grid__item:nth-child(3) {
+    --grid-item-bg-color: Indigo;
+}
+
+.grid__item:nth-child(4) {
+    --grid-item-bg-color: Purple;
+}
+
+.grid__item:nth-child(5) {
+    --grid-item-bg-color: MediumPurple;
+}
+
+.grid__item:nth-child(6) {
+    --grid-item-bg-color: DarkOrchid;
+}
+
+.grid__item::after {
+    counter-increment: item;
+    content: counter(item);
+}
